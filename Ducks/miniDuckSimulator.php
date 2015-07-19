@@ -14,15 +14,18 @@ $mallard = new MallardDuck();
 $mallard->display();
 $mallard->quack();
 $mallard->swim();
+$mallard->fly();
 
 $readhead = new ReadheadDuck();
 
 $readhead->display();
 $readhead->quack();
 $readhead->swim();
+$readhead->fly();
 
 $rubber = new RubberDuck();
 
 $rubber->display();
 $rubber->quack();
 $rubber->swim();
+$rubber->fly();

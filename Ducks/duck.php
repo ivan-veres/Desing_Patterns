@@ -4,7 +4,18 @@
  * @package     SimUDuck app
  * @reference   Head First Design Patterns, O'REILLY
  */
-class Duck
-{
 
+abstract class Duck
+{
+    public function quack()
+    {
+        echo "Quack!\n";
+    }
+
+    public function swim()
+    {
+        echo "swiming..\n";
+    }
+
+    abstract function display();
 }

@@ -14,8 +14,13 @@ class RubberDuck extends Duck
         echo "Looking like Rubber duck!\n";
     }
 
+    public function quack()
+    {
+        echo "Squeeeek!\n";
+    }
+
     public function fly()
     {
-        echo "Rubber ducks can't fly.. :(";
+        echo "Rubber ducks can't fly.. :(\n";
     }
 }

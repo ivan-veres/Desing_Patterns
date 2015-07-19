@@ -3,6 +3,7 @@
 require_once "mallardDuck.php";
 require_once "readheadDuck.php";
 require_once "rubberDuck.php";
+require_once "decoyDuck.php";
 
 /**
  * @package     SimUDuck app
@@ -29,3 +30,10 @@ $rubber->display();
 $rubber->quack();
 $rubber->swim();
 $rubber->fly();
+
+$decoy = new DecoyDuck();
+
+$decoy->display();
+$decoy->quack();
+$decoy->swim();
+$decoy->fly();

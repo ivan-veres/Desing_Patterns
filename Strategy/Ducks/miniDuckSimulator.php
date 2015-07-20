@@ -4,6 +4,8 @@ require_once "mallardDuck.php";
 require_once "readheadDuck.php";
 require_once "rubberDuck.php";
 require_once "decoyDuck.php";
+require_once "flyRocketPowered.php";
+require_once "modelDuck.php";
 
 /**
  * @package     SimUDuck app
@@ -13,11 +15,18 @@ require_once "decoyDuck.php";
 $mallard = new MallardDuck();
 
 $mallard->display();
-$mallard->quack();
 $mallard->swim();
-$mallard->fly();
+$mallard->performFly();
+$mallard->performQuack();
 
-$readhead = new ReadheadDuck();
+$model = new ModelDuck();
+$model->display();
+$model->swim();
+$model->performFly();
+$model->setFlyBehavior(new FlyRocketPowered());
+$model->performFly();
+
+/*$readhead = new ReadheadDuck();
 
 $readhead->display();
 $readhead->quack();
@@ -36,4 +45,4 @@ $decoy = new DecoyDuck();
 $decoy->display();
 $decoy->quack();
 $decoy->swim();
-$decoy->fly();
+$decoy->fly();*/

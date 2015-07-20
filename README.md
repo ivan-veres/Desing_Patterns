@@ -1,6 +1,6 @@
 # PHP version
 The book is written for *JAVA* application.
-Since I am learning strategy patterns I decided to "translate" it to **PHP**
+Since I am learning design's patterns I decided to "translate" it to **PHP**
 
 ## Head First Design Patterns
 

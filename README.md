@@ -5,18 +5,18 @@ Since I am learning design's patterns I decided to "translate" it to **PHP**
 ## Head First Design Patterns
 
 ### TODO:
-[ ] Adapter
-[ ] Collections
-[ ] Command
-[ ] Composite
-[ ] Decorator
-[ ] Factory
-[ ] Iterator
-[ ] Observer
-[ ] Singleton
-[ ] Singleton
-[ ] State
-[x] Strategy
+- [ ] Adapter
+- [ ] Collections
+- [ ] Command
+- [ ] Composite
+- [ ] Decorator
+- [ ] Factory
+- [ ] Iterator
+- [ ] Observer
+- [ ] Singleton
+- [ ] Singleton
+- [ ] State
+- [x] Strategy
 
 ## Strategy Pattern
 **Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.**

@@ -11,14 +11,10 @@ require_once "flyNoWay.php";
 
 class ModelDuck extends Duck
 {
-    
-    protected $_flyBehavior;
-    protected $_quackBehavior;
 
     public function __construct()
     {
-        $this->_flyBehavior = new flyNoWay();
-        $this->_quackBehavior = new Quacking();
+        parent::__construct(new MuteQuack(), new FlyNoWay());
     }
     
     public function display()

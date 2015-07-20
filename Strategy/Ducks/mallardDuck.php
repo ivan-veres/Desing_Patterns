@@ -12,13 +12,9 @@ require_once "flyWithWings.php";
 class MallardDuck extends Duck
 {
 
-    protected $_quackBehavior;
-    protected $_flyBehavior;
-
     public function __construct()
     {
-        $this->_quackBehavior = new Quacking();
-        $this->_flyBehavior = new flyWithWings();
+        parent::__construct(new Quacking(), new FlyWithWings());
     }
 
     public function display()

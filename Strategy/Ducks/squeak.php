@@ -7,7 +7,7 @@ require_once "quackBehavior.php";
  * @reference   Head First Design Patterns, O'REILLY
  */
 
-class squeak implements quackBehavior
+class Squeak implements quackBehavior
 {
     public function quack()
     {

@@ -1,7 +1,7 @@
 <?php
 
 require_once "mallardDuck.php";
-require_once "readheadDuck.php";
+require_once "redheadDuck.php";
 require_once "rubberDuck.php";
 require_once "decoyDuck.php";
 require_once "flyRocketPowered.php";
@@ -26,23 +26,23 @@ $model->performFly();
 $model->setFlyBehavior(new FlyRocketPowered());
 $model->performFly();
 
-/*$readhead = new ReadheadDuck();
+$redhead = new RedheadDuck();
 
-$readhead->display();
-$readhead->quack();
-$readhead->swim();
-$readhead->fly();
+$redhead->display();
+$redhead->swim();
+$redhead->performQuack();
+$redhead->performFly();
 
 $rubber = new RubberDuck();
 
 $rubber->display();
-$rubber->quack();
 $rubber->swim();
-$rubber->fly();
+$rubber->performQuack();
+$rubber->performFly();
 
 $decoy = new DecoyDuck();
 
 $decoy->display();
-$decoy->quack();
 $decoy->swim();
-$decoy->fly();*/
+$decoy->performQuack();
+$decoy->performFly();

@@ -8,7 +8,7 @@ require_once "flyBehavior.php";
  * @reference   Head First Design Patterns, O'REILLY
  */
 
-class flyNoWay implements flyBehavior
+class FlyNoWay implements flyBehavior
 {
     public function fly()
     {

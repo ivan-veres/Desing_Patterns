@@ -1,6 +1,9 @@
 <?php
 
 require_once "duck.php";
+require_once "flyNoWay.php";
+require_once "squeak.php";
+
 
 /**
  * @package     SimUDuck app
@@ -9,18 +12,14 @@ require_once "duck.php";
 
 class RubberDuck extends Duck
 {
+
+    public function __construct()
+    {
+        parent::__construct(new Squeak(), new FlyNoWay());
+    }
+
     public function display()
     {
         echo "Looking like Rubber duck!\n";
-    }
-
-    public function quack()
-    {
-        echo "Squeeeek!\n";
-    }
-
-    public function fly()
-    {
-        echo "Rubber ducks can't fly.. :(\n";
     }
 }

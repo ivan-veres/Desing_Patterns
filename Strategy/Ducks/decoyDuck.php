@@ -1,6 +1,8 @@
 <?php
 
 require_once "duck.php";
+require_once "muteQuack.php";
+require_once "flyNoWay.php";
 
 /**
  * @package     SimUDuck app
@@ -9,18 +11,18 @@ require_once "duck.php";
 
 class DecoyDuck extends Duck
 {
+
+    protected $_quackBehavior;
+    protected $_flyBehavior;
+
+    public function __construct()
+    {
+        $this->_quackBehavior = new MuteQuack();
+        $this->_flyBehavior = new FlyNoWay();
+    }
+
     public function display()
     {
         echo "Looking like Decoy duck!\n";
-    }
-
-    public function fly()
-    {
-        echo "Decoy ducks can't fly.. :(\n";
-    }
-
-    public function quack()
-    {
-        echo "Decoy ducks can't quack!\n";
     }
 }

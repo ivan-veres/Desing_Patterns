@@ -16,3 +16,7 @@ Program to an interface, not an implementation.
 
 ### Design Principle #3
 Favor composition over inheritance
+
+
+## Observer Pattern
+**Defines a one-to-many dependency between so that when one objects changes state, all of its dependents are notified and updated automatically.**

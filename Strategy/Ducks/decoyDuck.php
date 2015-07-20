@@ -12,13 +12,9 @@ require_once "flyNoWay.php";
 class DecoyDuck extends Duck
 {
 
-    protected $_quackBehavior;
-    protected $_flyBehavior;
-
     public function __construct()
     {
-        $this->_quackBehavior = new MuteQuack();
-        $this->_flyBehavior = new FlyNoWay();
+        parent::__construct(new MuteQuack(), new FlyNoWay());
     }
 
     public function display()
